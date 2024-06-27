@@ -29,6 +29,7 @@ p {
 
 h2 { margin-top: 0; }
 
+/* organizacao da linguagem */
 #language-toggle {
     margin-top: 20px;
     margin-left: 40%;
@@ -41,6 +42,30 @@ h2 { margin-top: 0; }
     align-items: center;      
     font-size: 1.2rem;
 }
+
+.tm-language {
+    min-width: 240px;
+    height: 100px;
+    background-color: white;
+    color: #099;
+    display: flex;
+    justify-content: center;
+    align-items: center;      
+    font-size: 1.2rem;
+}
+
+.tm-language:hover,
+.tm-language.active {
+    background-color: #099;
+    color: white;
+}
+
+.tm-language-icon {
+    margin-right: 15px; /* Ajuste o valor conforme necessário */
+    margin-left: 15px;  /* Ajuste o valor conforme necessário */
+    font-size: 1.5rem;
+}
+
 /* tm-image background */
 .tm-image-wrapper {
     position: fixed;
@@ -231,18 +256,18 @@ h2 { margin-top: 0; }
     margin-right: 0;
 }
 
-/* Go from zero to full opacity */
+/* Ir do 0 para opacidade total */
 @keyframes fadeEffect {
     from { opacity: 0.3; }
     to { opacity: 1; }
 }
 
-/* About */
+/* Sobre */
 .tm-about-box-1 { padding: 40px 30px 50px 0; }
 .tm-about-box-2 { padding: 50px 40px 30px; }
 .tm-about-header { margin-left: 220px; }
 
-/* Special */
+/* Intens speciais */
 .tm-special-items {
     display: flex;
     flex-wrap: wrap;
