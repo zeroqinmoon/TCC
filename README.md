@@ -1,6 +1,6 @@
 # TCC
 
-# TCC Project - en
+# TCC Project | en-US
 
 # Full Font Awesome Free license: https://fontawesome.com/license/free.
 Font Awesome Free is free, open source, and GPL friendly. You can use it for
@@ -23,7 +23,7 @@ Attribution is required by MIT, SIL OFL, and CC BY licenses. Downloaded Font
 
 
 
-# Proyecto TCC - es
+# Proyecto TCC | es-ES
 
 # Licencia gratuita Full Font Awesome: https://fontawesome.com/license/free.
 Font Awesome Free es gratuito, de código abierto y compatible con GPL. Puedes usarlo para
@@ -45,7 +45,7 @@ archivos sin iconos.
 La atribución es obligatoria para las licencias MIT, SIL OFL y CC BY. Fuente descargada
 
 
-# Projeto TCC - pt
+# Projeto TCC | pt-BR
 
 # Licença gratuita Full Font Awesome: https://fontawesome.com/license/free.
 Font Awesome Free é gratuito, de código aberto e compatível com GPL. Você pode usá-lo para
