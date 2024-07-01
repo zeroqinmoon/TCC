@@ -395,13 +395,13 @@ h2 { margin-top: 0; }
         margin-bottom: 15px;        
     }
 
-    .tm-drinks-nav { height: auto; }
+    .tm-options-nav { height: auto; }
 
-    .tm-drinks-nav > ul {
+    .tm-options-nav > ul {
         flex-direction: column;
         padding: 15px;
     }
 
-    .tm-drinks-nav > ul > li { margin-bottom: 10px; }
-    .tm-drinks-nav > ul > li > a { display: block; }
+    .tm-options-nav > ul > li { margin-bottom: 10px; }
+    .tm-options-nav > ul > li > a { display: block; }
 }
