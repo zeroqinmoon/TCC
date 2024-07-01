@@ -174,10 +174,10 @@ h2 { margin-top: 0; }
     background-color: rgba(0,0,0,0.6);
     color: white;
 }
+/*Squares menu config options*/
+.tm-options-nav > ul > li { display: inline-block; }
 
-.tm-drinks-nav > ul > li { display: inline-block; }
-
-.tm-drinks-nav > ul > li > a {
+.tm-options-nav > ul > li > a {
     color: white;
     font-size: 1.2rem;
     padding-top: 15px;
@@ -185,22 +185,22 @@ h2 { margin-top: 0; }
     border-bottom: 3px solid transparent;
 }
 
-.tm-drinks-nav { height: 80px; }
+.tm-options-nav { height: 80px; }
 .tm-main { max-width: 660px; }
 
-.tm-drinks-nav > ul {
+.tm-options-nav > ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100%;
 }
 
-.tm-drinks-nav > ul > li a.active,
-.tm-drinks-nav > ul > li a:hover {
+.tm-options-nav > ul > li a.active,
+.tm-options-nav > ul > li a:hover {
     color: #96FEFF;
     border-bottom: 4px solid #96FEFF;
 }
-
+/*Squares menu config options end*/
 .tm-list-item {
     display: flex;
     align-items: center;
