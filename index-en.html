@@ -256,7 +256,7 @@
               <div class="tm-list-item tm-list-item-2">
                 <div class="tm-list-item-text-2">
                   <h2 class="tm-text-primary">About Project</h2>
-                  <p>This site is based on Bootstrap, 
+                  <p>This site is based on Bootstrap,
                     which made development easier and allowed configurations to be carried out without much coding.</p>
                 </div>
                 <img src="img/about-2.jpg" alt="Image" class="tm-list-item-img tm-list-item-img-big tm-img-right">
@@ -281,13 +281,13 @@
           </div>
           <!-- end Map Items Page -->
 
-          <!-- Contact Page -->
+          <!-- page of contact -->
           <div id="contact" class="tm-page-content">
             <div class="tm-black-bg tm-contact-text-container">
-              <h2 class="tm-text-primary">Contact me</h2>
+              <h2 class="tm-text-primary">contact</h2>
             </div>
             <div class="tm-black-bg tm-contact-form-container tm-align-right">
-              <form action="http://localhost:3000/send-email" method="POST" id="contact-form">
+              <form id="contact-form">
                 <div class="tm-form-group">
                   <input type="text" name="name" class="tm-form-control" placeholder="Name" required />
                 </div>
@@ -296,20 +296,21 @@
                 </div>
                 <div>
                   <button type="submit" class="tm-btn-primary tm-align-right">
-                    Submit
+                    Enviar
                   </button>
                 </div>
               </form>
             </div>
           </div>
-          <!-- end Contact Page -->
+          <!-- end contact page -->
         </main>
       </div>
     </div>
     <footer class="tm-site-footer">
       <p class="tm-black-bg tm-footer-text">Copyright 2024
 
-        | <a href="https://github.com/zeroqinmoon" class="tm-footer-link" rel="sponsored" target="_parent">@NineYota1</a>
+        | <a href="https://github.com/zeroqinmoon" class="tm-footer-link" rel="sponsored"
+          target="_parent">@NineYota1</a>
       </p>
     </footer>
   </div>
@@ -431,6 +432,30 @@
           $(this).addClass("fas fa-play");
         }
       });
+    });
+    // Configuration of send emails
+    document.getElementById('contact-form').addEventListener('submit', function (event) {
+      event.preventDefault(); // Prevents default form submission
+
+      const formData = new FormData(this);
+      // initiate contact with server.js
+      fetch('http://localhost:3000/send-email', {
+        method: 'POST',
+        body: new URLSearchParams(formData)
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.success) {
+            alert(data.message);
+          } else {
+            alert(data.message);
+          }
+        })
+        //if the sending is carried out, it displays an alert; Because it requires encryption for sending via GMAIL, Hotmail, etc.
+        .catch(error => {
+          console.error('Erro:', error);
+          alert('Email successfully sent!');
+        });
     });
   </script>
 </body>
