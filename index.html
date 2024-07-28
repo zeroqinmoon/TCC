@@ -10,7 +10,7 @@
   <!-- https://fonts.google.com/ -->
   <link rel="stylesheet" href="css/index.css"><!-- Estilo da Pagina -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@v9.1.0/ol.css"><!-- estilo do mapa -->
-<!--  -->
+  <!--  -->
 </head>
 
 <body>
@@ -288,11 +288,12 @@
               <h2 class="tm-text-primary">Entre em Contato</h2><!-- titulo -->
             </div>
             <div class="tm-black-bg tm-contact-form-container tm-align-right">
-              <form id="contact-form">
+              <form id="contact-form"><!-- objetos do formulario de contato -->
                 <div class="tm-form-group">
-                  <input type="text" name="name" class="tm-form-control" placeholder="Nome" required />
+                  <input type="text" name="name" class="tm-form-control" placeholder="Nome"
+                    required /><!-- coloca nome -->
                 </div>
-                <div class="tm-form-group tm-mb-30">
+                <div class="tm-form-group tm-mb-30"><!-- coloca mensagem -->
                   <textarea rows="6" name="message" class="tm-form-control" placeholder="Mensagem" required></textarea>
                 </div>
                 <div>
@@ -316,7 +317,7 @@
       </p>
     </footer>
   </div>
-
+  <!-- obs: o video foi uma ideia opcional, funciona 100% -->
   <!-- Background video 
   <div class="tm-video-wrapper">
       <i id="tm-video-control-button" class="fas fa-pause"></i>
@@ -333,9 +334,9 @@
 
   <!-- Scripts and Bootstrap codes -->
   <script src="js/jquery-3.4.1.min.js"></script>
-  <script src="js/server.js"></script>
+  <script src="js/server.js"></script><!-- servidor node -->
   <script>
-
+    // config da altura x comprimento do video na tela;
     function setVideoSize() {
       const vidWidth = 1920;
       const vidHeight = 1080;
@@ -346,7 +347,7 @@
       const newVidWidth = tempVidWidth > windowWidth ? tempVidWidth : windowWidth;
       const newVidHeight = tempVidHeight > windowHeight ? tempVidHeight : windowHeight;
       const tmVideo = $('#tm-video');
-
+      // css do video
       tmVideo.css('width', newVidWidth);
       tmVideo.css('height', newVidHeight);
     }
@@ -435,7 +436,7 @@
         }
       });
     });
-    // Configuracao de envio do formulario
+    // Configuracao de envio do formulario, nao mexer
     document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault(); // Previne o envio padrão do formulário
 
